@@ -32,7 +32,7 @@ const schema = buildSchema(`
 
 const getUsers = async () => {
   try {
-    const { data } = await axios.get('http://backend:3000/users');
+    const { data } = await axios.get('http://backend:3000/api/users');
     return data.data;
   } catch (error) {
     console.log(error);
